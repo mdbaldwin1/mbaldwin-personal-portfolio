@@ -1,0 +1,15 @@
+{
+  "short_name": "MB Portfolio",
+  "name": "Michael Baldwin Portfolio",
+  "icons": [
+    {
+      "src": "MB-Logo-Transparent.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#216570",
+  "background_color": "#f7f8f5"
+}

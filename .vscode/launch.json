@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug ui with Chrome",
+      "type": "chrome",
+      "preLaunchTask": "npm_ui",
+      "request": "launch",
+      "url": "http://localhost:3030",
+      "cwd": "${workspaceFolder}",
+      "webRoot": "${workspaceFolder}/src"
+    }
+  ]
+}
