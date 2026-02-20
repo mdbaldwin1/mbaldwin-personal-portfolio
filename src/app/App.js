@@ -9,7 +9,7 @@ const introLines = [
 ];
 
 const quickStats = [
-  { label: 'Years Shipping Software', value: '6+' },
+  { label: 'Years Shipping Software', value: '7+' },
   { label: 'Enterprise Accounts Delivered', value: '10+' },
   { label: 'Assets Governed in VulnRx', value: '60,000+' },
   { label: 'Current Focus', value: 'Senior SWE / Product Teams' },
