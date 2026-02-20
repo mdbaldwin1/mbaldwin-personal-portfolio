@@ -1,0 +1,67 @@
+.circuit-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0.58;
+}
+
+.circuit-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.trace-layer {
+  filter: drop-shadow(0 0 4px rgba(121, 247, 199, 0.2));
+}
+
+.circuit-path {
+  fill: none;
+  stroke: rgba(121, 247, 199, 0.25);
+  stroke-width: 0.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.mother-board {
+  fill: rgba(6, 16, 23, 0.76);
+  stroke: rgba(78, 218, 255, 0.24);
+  stroke-width: 1;
+}
+
+.board-label {
+  fill: rgba(121, 247, 199, 0.44);
+  font-size: 20px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.circuit-node {
+  fill: rgba(121, 247, 199, 0.38);
+  stroke: rgba(78, 218, 255, 0.42);
+  stroke-width: 0.5;
+  animation: node-pulse 1.6s ease-in-out infinite;
+  animation-delay: var(--node-delay, 0ms);
+}
+
+@media (max-width: 700px) {
+  .circuit-backdrop {
+    opacity: 0.4;
+  }
+}
+
+@keyframes node-pulse {
+  0%,
+  100% {
+    opacity: 0.28;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .circuit-node {
+    animation: none;
+  }
+}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>404 | Michael Baldwin</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: radial-gradient(circle at 20% 10%, rgba(78, 218, 255, 0.12), transparent 32%),
+          radial-gradient(circle at 85% 0%, rgba(121, 247, 199, 0.14), transparent 34%),
+          linear-gradient(170deg, #04070a 0%, #07111a 60%, #0c1d2b 100%);
+        color: #d3e8d9;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 1rem;
+      }
+      .card {
+        width: min(680px, 100%);
+        border: 1px solid rgba(110, 255, 219, 0.28);
+        border-radius: 14px;
+        background: rgba(6, 14, 22, 0.82);
+        box-shadow: 0 24px 40px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+      }
+      .chrome {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.7rem 0.9rem;
+        border-bottom: 1px solid rgba(121, 247, 199, 0.2);
+      }
+      .dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 999px;
+      }
+      .dot:nth-child(1) {
+        background: #ff695f;
+      }
+      .dot:nth-child(2) {
+        background: #ffc648;
+      }
+      .dot:nth-child(3) {
+        background: #2cd96b;
+      }
+      .content {
+        padding: 1rem;
+      }
+      .line {
+        margin: 0.35rem 0;
+      }
+      .prompt {
+        color: #ffd37b;
+      }
+      .ok {
+        color: #79f7c7;
+      }
+      a {
+        color: #4edaff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card" role="main">
+      <div class="chrome">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <div class="content">
+        <p class="line"><span class="prompt">mb@host:~$</span> open /requested/page</p>
+        <p class="line">error: 404 not found</p>
+        <p class="line"><span class="prompt">mb@host:~$</span> ls /</p>
+        <p class="line"><a href="/">/home (portfolio)</a></p>
+        <p class="line ok">Tip: use the link above to return to the main portfolio page.</p>
+      </div>
+    </main>
+  </body>
+</html>

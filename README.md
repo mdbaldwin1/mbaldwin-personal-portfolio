@@ -19,5 +19,5 @@ npm run build
 
 ## Content source
 
-Primary content is based on `Baldwin_Michael_Resume_20FEB2026.docx`.
-Downloadable resume is served from `public/Baldwin_Michael_Resume_20FEB2026.docx`.
+Primary content is based on `Baldwin_Michael_Resume_20FEB2026.pdf`.
+Downloadable resume is served from `public/Baldwin_Michael_Resume_20FEB2026.pdf`.
