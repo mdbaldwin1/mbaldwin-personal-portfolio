@@ -12,7 +12,7 @@ const quickStats = [
   { label: 'Years Shipping Software', value: '7+' },
   { label: 'Assets Governed in VulnRx', value: '60,000+' },
   { label: 'Workflow Reduction at Citi', value: '2mo -> 2d' },
-  { label: 'Shipped Product Surfaces', value: '5+' },
+  { label: 'Independent Products Shipped', value: '5' },
 ];
 
 const experience = [
@@ -44,38 +44,12 @@ const experience = [
 
 const projects = [
   {
-    name: 'Myrivo',
-    tag: 'Live Revenue Product',
-    url: 'https://myrivo.app',
-    image: '/project-media/myrivo-seller-workspace.jpg',
-    imageAlt: 'Myrivo seller workspace dashboard',
-    description:
-      'Multi-tenant commerce platform for independent makers and small shops, combining branded storefronts, cart/checkout, inventory, orders, promotions, reviews, legal/privacy flows, and merchant operations.',
-    proof:
-      'Built Supabase/PostgreSQL data flows with row-level security, Stripe Connect-style seller/payment workflows, storefront analytics, customer/order workflows, email notifications, and route/component test coverage.',
-    stack: 'Next.js, TypeScript, Supabase/PostgreSQL, RLS, Stripe Connect, Resend, Tailwind CSS, Vitest, Playwright',
-  },
-  {
-    name: 'Curby',
-    tag: 'Near-Launch Venture',
-    url: 'https://getcurby.app',
-    images: [
-      { src: '/project-media/curby/armchair.png', alt: 'Curby armchair listing screen' },
-      { src: '/project-media/curby/golf-clubs.png', alt: 'Curby golf clubs listing screen' },
-      { src: '/project-media/curby/map.png', alt: 'Curby map view screen' },
-      { src: '/project-media/curby/my-posts.png', alt: 'Curby my posts screen' },
-    ],
-    description:
-      'A community-driven marketplace for free curbside items across mobile and web. Users can post in seconds, browse nearby finds, save items, navigate for pickup, and participate in a moderated reuse network.',
-    proof:
-      'Built the mobile app, public web/admin surfaces, Supabase-backed geospatial data flows, moderation workflows, notifications, rewards, and legal/business launch foundation.',
-    stack:
-      'React Native, Expo, Next.js, TypeScript, Supabase/PostgreSQL, RPC/functions, Redux Toolkit, TanStack Query, Sentry',
-  },
-  {
     name: 'Spark',
-    tag: 'AI Product',
+    tag: 'In-Development AI Product',
     url: 'https://spark-rm.com',
+    logo: '/project-media/logos/spark-vertical-cropped.png',
+    logoAlt: 'Spark logo',
+    logoType: 'vertical',
     images: [
       { src: '/project-media/spark/home.png', alt: 'Spark home streak screen' },
       { src: '/project-media/spark/today-check-ins.png', alt: 'Spark today check-ins screen' },
@@ -85,35 +59,86 @@ const projects = [
         alt: 'Spark AI contact creation screen',
       },
     ],
-    description:
-      'AI relationship manager that helps busy professionals remember who matters, see who to follow up with, and draft thoughtful messages from contact context.',
-    proof:
-      'Built contact memory, daily check-in suggestions, AI-assisted message drafting, privacy-conscious workflow boundaries, and subscription-tier product packaging.',
-    stack: 'React, TypeScript, AI workflows, subscription product design, relationship data modeling',
+    problem:
+      'People whose careers run on relationships rarely need another CRM; they need help turning scattered notes, reminders, birthdays, and intentions into timely, genuine follow-up.',
+    built:
+      "Built a mobile-first AI relationship manager with Spark Chat, contact memory, daily ranked check-ins, voice/context capture, drafted messages in the user's voice, and visible AI activity controls.",
+    impact:
+      'Frames AI as a human-approved relationship steward instead of an autopilot: suggestions stay small, drafts stay editable, dismissed ideas become learning signals, and privacy boundaries are part of the product.',
+    stack:
+      'TypeScript, React Native, Expo, Next.js, NestJS, PostgreSQL, Prisma, Better Auth, Anthropic/Google AI SDKs, Resend, Sentry, PostHog, Vitest, Jest, Detox',
+  },
+  {
+    name: 'Myrivo',
+    tag: 'Live Revenue Product',
+    url: 'https://myrivo.app',
+    logo: '/project-media/logos/myrivo-logo-transparent.svg',
+    logoAlt: 'Myrivo logo',
+    image: '/project-media/myrivo-seller-workspace.jpg',
+    imageAlt: 'Myrivo seller workspace dashboard',
+    problem:
+      'Small product brands need a polished storefront and a calmer operating workflow without paying for a heavy custom build or stitching together site, checkout, inventory, fulfillment, and promotions.',
+    built:
+      'Built a multi-tenant commerce platform that keeps branded storefronts, product setup, variants, inventory, checkout, pickup/shipping, promotions, reviews, orders, and seller operations on one data model.',
+    impact:
+      "Live with real seller usage and more than $500 in sales to date, proving the platform can carry both the customer-facing buying experience and the seller's day-to-day fulfillment workflow.",
+    stack:
+      'TypeScript, Next.js, React, Supabase/PostgreSQL, Row-Level Security, Stripe Connect, Resend, Radix UI, Tailwind CSS, Vitest, Playwright',
   },
   {
     name: 'Carvd Studio',
     tag: 'Live Revenue Product',
     url: 'https://carvd-studio.com',
+    logo: '/project-media/logos/carvd-studio-logo.svg',
+    logoAlt: 'Carvd Studio logo',
     image: '/project-media/carvd-studio-workspace.png',
     imageAlt: 'Carvd Studio 3D furniture design workspace',
-    description:
-      'Cross-platform desktop application for furniture and cabinet design, including real-time 3D editing, reusable assemblies, stock libraries, optimized cut-list generation, and PDF exports.',
-    proof:
-      'Shipped publicly with a marketing/docs site, 14-day trial, Lemon Squeezy license activation, offline license cache, auto-update/release packaging, and initial paid sales.',
-    stack: 'Electron, React, TypeScript, Three.js, Zustand, Vitest, Playwright, electron-builder, Lemon Squeezy',
+    problem:
+      'Woodworkers need design software that moves from 3D furniture planning to practical shop outputs without a subscription, constant connectivity, or a separate spreadsheet for material math.',
+    built:
+      'Built a cross-platform desktop app for offline 3D design, reusable assemblies, stock libraries, material cost tracking, optimized cut lists, PDF exports, trial licensing, offline activation cache, and auto-updates.',
+    impact:
+      'Shipped a public paid product with real sales, a marketing/docs site, one-time purchase positioning, release packaging, license activation, and the offline-first behavior desktop users expect.',
+    stack:
+      'TypeScript, Electron, Electron Vite, React, Three.js, React Three Fiber, Zustand, Radix UI, Tailwind CSS, Vitest, Playwright, electron-builder, Lemon Squeezy',
+  },
+  {
+    name: 'Curby',
+    tag: 'Near-Launch Venture',
+    url: 'https://getcurby.app',
+    logo: '/project-media/logos/curby-logo.svg',
+    logoAlt: 'Curby logo',
+    images: [
+      { src: '/project-media/curby/armchair.png', alt: 'Curby armchair listing screen' },
+      { src: '/project-media/curby/golf-clubs.png', alt: 'Curby golf clubs listing screen' },
+      { src: '/project-media/curby/map.png', alt: 'Curby map view screen' },
+      { src: '/project-media/curby/my-posts.png', alt: 'Curby my posts screen' },
+    ],
+    problem:
+      'Free curbside items move fast, but existing marketplaces make neighbors negotiate, schedule, and coordinate around things that should be simple: see it, want it, go get it.',
+    built:
+      'Built mobile and web surfaces for photo-first posting, nearby feed browsing, map-based discovery, saved items, pickup navigation, taken/confirmed flows, post management, notifications, moderation, and rewards.',
+    impact:
+      'Turns neighborhood reuse into a low-friction local utility: no fees, no messaging loop, distance-aware discovery, and a product foundation ready for launch once the business setup is complete.',
+    stack:
+      'TypeScript, React Native, Expo, Next.js, React, Supabase/PostgreSQL, RPC/functions, Redux Toolkit, TanStack Query, React Native Maps, React Leaflet, Sentry, Jest, Vitest',
   },
   {
     name: 'Baldwin Listings Co.',
     tag: 'Live Managed-Service Platform',
     url: 'https://baldwinlistingsco.com',
+    brandInitials: 'BLC',
+    brandText: 'Baldwin Listings Co.',
     previewUrl: 'https://baldwinlistingsco.com',
     previewTitle: 'Baldwin Listings Co. homepage preview',
-    description:
-      'Managed seller-lead generation platform for real estate agents, covering branded landing pages, instant home-value estimates, lead capture, verification, nurture, billing, client portals, and internal operations.',
-    proof:
-      'Built property-provider integrations, lead scoring, ZeroBounce/Twilio/NumVerify verification, Resend email workflows, Vercel domain provisioning, admin workspaces, and campaign/reporting architecture.',
-    stack: 'Next.js, TypeScript, Neon Postgres, Resend, Stripe, Vercel APIs, Twilio, Google AI, Vitest, Playwright',
+    problem:
+      'Real estate agents do not need another marketing dashboard to configure; they need a managed seller-lead engine that feels premium to homeowners and delivers direct, verified opportunities.',
+    built:
+      'Built the managed-service platform behind the offer: branded seller funnels, domains, local SEO pages, home-value capture, lead scoring, email/phone/property-owner verification, billing, client visibility, and internal operations.',
+    impact:
+      'Supports a founding-client service model where the team handles setup, launch, lead review, reporting, and ongoing optimization while agents stay focused on converting homeowner conversations into listings.',
+    stack:
+      'TypeScript, Next.js, React, Neon Postgres, Vercel Blob/APIs, Resend, Stripe, Twilio, Google AI, Sentry, Tailwind CSS, Vitest, Playwright',
   },
 ];
 
@@ -205,8 +230,8 @@ function App() {
             <h1>Michael Baldwin</h1>
             <p className="hero-subtitle">Senior Full-Stack / Product Engineer</p>
             <p className="hero-description">
-              Building enterprise workflow platforms and shipped product software across React, TypeScript, Node.js,
-              Supabase/Postgres, mobile, and AI-enabled workflows.
+              Senior full-stack/product engineer building enterprise workflow systems and revenue-generating products
+              across React, TypeScript, Node.js, Supabase/Postgres, mobile, and AI-enabled workflows.
             </p>
 
             <div className="typed-terminal" aria-live="polite">
@@ -313,11 +338,42 @@ function App() {
           </section>
 
           <section className="terminal-panel" id="projects">
-            <div className="panel-command">$ open /projects/personal</div>
+            <div className="panel-command">$ open /projects/product-portfolio</div>
             <h2>Product Portfolio</h2>
+            <p className="section-intro">
+              Independent products and ventures where I owned the path from product thinking through architecture,
+              implementation, launch, and iteration.
+            </p>
             <div className="project-grid">
               {projects.map((project) => (
                 <article key={project.name} className="project-card">
+                  <div className="project-brand-row">
+                    <div className="project-brand-lockup">
+                      {project.logo ? (
+                        <img
+                          className={`project-logo ${project.logoType === 'icon' ? 'project-logo-icon' : ''} ${
+                            project.logoType === 'vertical' ? 'project-logo-vertical' : ''
+                          }`}
+                          src={project.logo}
+                          alt={project.logoAlt}
+                          loading="lazy"
+                        />
+                      ) : project.brandInitials ? (
+                        <div className="project-baldwin-lockup" aria-label={project.brandText}>
+                          <span className="project-baldwin-mark">{project.brandInitials}</span>
+                          <span className="project-baldwin-wordmark">{project.brandText}</span>
+                        </div>
+                      ) : (
+                        <span className="project-wordmark">{project.brandText || project.name}</span>
+                      )}
+                      <p className="project-tag">[{project.tag}]</p>
+                    </div>
+                    {project.url ? (
+                      <a className="project-brand-link" href={project.url} target="_blank" rel="noreferrer">
+                        launch ↗
+                      </a>
+                    ) : null}
+                  </div>
                   {project.images ? (
                     <a
                       className="project-media-link project-media-link-gallery"
@@ -368,13 +424,23 @@ function App() {
                       <span className="project-media-overlay">open {project.name.toLowerCase()} ↗</span>
                     </a>
                   ) : null}
-                  <p className="project-tag">[{project.tag}]</p>
-                  <h3>{project.name}</h3>
-                  <p>{project.description}</p>
-                  <p className="project-proof">{project.proof}</p>
+                  <dl className="project-case-study">
+                    <div>
+                      <dt>Problem</dt>
+                      <dd>{project.problem}</dd>
+                    </div>
+                    <div>
+                      <dt>Built</dt>
+                      <dd>{project.built}</dd>
+                    </div>
+                    <div>
+                      <dt>Impact</dt>
+                      <dd>{project.impact}</dd>
+                    </div>
+                  </dl>
                   <p className="project-stack">{project.stack}</p>
                   {project.url ? (
-                    <a href={project.url} target="_blank" rel="noreferrer">
+                    <a className="project-text-link" href={project.url} target="_blank" rel="noreferrer">
                       launch {project.name.toLowerCase()} ↗
                     </a>
                   ) : (
