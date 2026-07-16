@@ -4,15 +4,15 @@ import { CircuitBackdrop } from './components/circuitry/CircuitBackdrop';
 
 const introLines = [
   'init --profile michael-baldwin',
-  'load --focus full-stack-engineering',
+  'load --focus senior-full-stack-product-engineering',
   'run --mode enterprise-and-product-impact',
 ];
 
 const quickStats = [
   { label: 'Years Shipping Software', value: '7+' },
-  { label: 'Enterprise Accounts Delivered', value: '10+' },
   { label: 'Assets Governed in VulnRx', value: '60,000+' },
-  { label: 'Current Focus', value: 'Senior SWE / Product Teams' },
+  { label: 'Workflow Reduction at Citi', value: '2mo -> 2d' },
+  { label: 'Shipped Product Surfaces', value: '5+' },
 ];
 
 const experience = [
@@ -25,7 +25,7 @@ const experience = [
     highlights: [
       'Built FogLifter, a configurable platform that ingests, transforms, and processes customer data into report-ready outputs.',
       'Led Pipeline Builder: visual drag-and-drop workflow authoring with versioning and validation that replaced handwritten JSON configs.',
-      'Delivered client automation for Kaiser Permanente, Kyndryl, Raytheon, and Disney across ingestion, transformation, and invoice rollups.',
+      'Built a Walt Disney Company telecom billing system integrated with FogLifter, ServiceNow, Tangoe, and Spok to track services, payments, invoices, and account balances as the source of truth for Orlando business units.',
       'Developed FogLifter VulnRx policy and attestation workflows supporting maintenance windows and exemptions across 60,000+ assets.',
     ],
   },
@@ -44,41 +44,76 @@ const experience = [
 
 const projects = [
   {
-    name: 'Curby',
-    tag: 'Live Product',
-    url: 'https://getcurby.app',
-    repo: '~/Curby/curby + ~/Curby/curby-web',
+    name: 'Myrivo',
+    tag: 'Live Revenue Product',
+    url: 'https://myrivo.app',
+    image: '/project-media/myrivo-seller-workspace.jpg',
+    imageAlt: 'Myrivo seller workspace dashboard',
     description:
-      'A community-driven marketplace for free curbside items: post in seconds, discover nearby finds, and navigate for pickup without messaging or scheduling overhead. Built to reduce landfill waste while making neighborhood reuse simple and fast across mobile and web.',
+      'Multi-tenant commerce platform for independent makers and small shops, combining branded storefronts, cart/checkout, inventory, orders, promotions, reviews, legal/privacy flows, and merchant operations.',
+    proof:
+      'Built Supabase/PostgreSQL data flows with row-level security, Stripe Connect-style seller/payment workflows, storefront analytics, customer/order workflows, email notifications, and route/component test coverage.',
+    stack: 'Next.js, TypeScript, Supabase/PostgreSQL, RLS, Stripe Connect, Resend, Tailwind CSS, Vitest, Playwright',
+  },
+  {
+    name: 'Curby',
+    tag: 'Near-Launch Venture',
+    url: 'https://getcurby.app',
+    images: [
+      { src: '/project-media/curby/armchair.png', alt: 'Curby armchair listing screen' },
+      { src: '/project-media/curby/golf-clubs.png', alt: 'Curby golf clubs listing screen' },
+      { src: '/project-media/curby/map.png', alt: 'Curby map view screen' },
+      { src: '/project-media/curby/my-posts.png', alt: 'Curby my posts screen' },
+    ],
+    description:
+      'A community-driven marketplace for free curbside items across mobile and web. Users can post in seconds, browse nearby finds, save items, navigate for pickup, and participate in a moderated reuse network.',
+    proof:
+      'Built the mobile app, public web/admin surfaces, Supabase-backed geospatial data flows, moderation workflows, notifications, rewards, and legal/business launch foundation.',
     stack:
-      'React Native, Expo, Next.js, TypeScript, Supabase/PostgreSQL, Redux Toolkit, TanStack React Query, moderation and notification workflows',
+      'React Native, Expo, Next.js, TypeScript, Supabase/PostgreSQL, RPC/functions, Redux Toolkit, TanStack Query, Sentry',
+  },
+  {
+    name: 'Spark',
+    tag: 'AI Product',
+    url: 'https://spark-rm.com',
+    images: [
+      { src: '/project-media/spark/home.png', alt: 'Spark home streak screen' },
+      { src: '/project-media/spark/today-check-ins.png', alt: 'Spark today check-ins screen' },
+      { src: '/project-media/spark/contact-detail.png', alt: 'Spark contact detail screen' },
+      {
+        src: '/project-media/spark/steward-sheet-create-contact.png',
+        alt: 'Spark AI contact creation screen',
+      },
+    ],
+    description:
+      'AI relationship manager that helps busy professionals remember who matters, see who to follow up with, and draft thoughtful messages from contact context.',
+    proof:
+      'Built contact memory, daily check-in suggestions, AI-assisted message drafting, privacy-conscious workflow boundaries, and subscription-tier product packaging.',
+    stack: 'React, TypeScript, AI workflows, subscription product design, relationship data modeling',
   },
   {
     name: 'Carvd Studio',
-    tag: 'Live Product',
+    tag: 'Live Revenue Product',
     url: 'https://carvd-studio.com',
-    repo: '~/Carvd/carvd-studio',
+    image: '/project-media/carvd-studio-workspace.png',
+    imageAlt: 'Carvd Studio 3D furniture design workspace',
     description:
-      'Cross-platform desktop application for furniture and cabinet design, including 3D editing, cut-list generation, and PDF exports.',
-    stack: 'Electron, React, TypeScript, Three.js, shadcn/ui, Radix UI, Vite',
+      'Cross-platform desktop application for furniture and cabinet design, including real-time 3D editing, reusable assemblies, stock libraries, optimized cut-list generation, and PDF exports.',
+    proof:
+      'Shipped publicly with a marketing/docs site, 14-day trial, Lemon Squeezy license activation, offline license cache, auto-update/release packaging, and initial paid sales.',
+    stack: 'Electron, React, TypeScript, Three.js, Zustand, Vitest, Playwright, electron-builder, Lemon Squeezy',
   },
   {
-    name: 'Realtime Chat Platform',
-    tag: 'Personal Build',
-    url: '',
-    repo: 'private repo',
+    name: 'Baldwin Listings Co.',
+    tag: 'Live Managed-Service Platform',
+    url: 'https://baldwinlistingsco.com',
+    previewUrl: 'https://baldwinlistingsco.com',
+    previewTitle: 'Baldwin Listings Co. homepage preview',
     description:
-      'Socket-based chat application built to deeply understand real-time bidirectional communication patterns and reliability concerns.',
-    stack: 'Node.js, WebSockets, React, Express',
-  },
-  {
-    name: 'Browser Game Experiment',
-    tag: 'Personal Build',
-    url: '',
-    repo: 'private repo',
-    description:
-      'Custom game mechanics and animation loop prototype used to sharpen front-end rendering and interaction design skills.',
-    stack: 'JavaScript, HTML5 Canvas, CSS',
+      'Managed seller-lead generation platform for real estate agents, covering branded landing pages, instant home-value estimates, lead capture, verification, nurture, billing, client portals, and internal operations.',
+    proof:
+      'Built property-provider integrations, lead scoring, ZeroBounce/Twilio/NumVerify verification, Resend email workflows, Vercel domain provisioning, admin workspaces, and campaign/reporting architecture.',
+    stack: 'Next.js, TypeScript, Neon Postgres, Resend, Stripe, Vercel APIs, Twilio, Google AI, Vitest, Playwright',
   },
 ];
 
@@ -105,14 +140,14 @@ const skills = [
   },
   {
     title: 'Auth + Cloud',
-    value: 'Azure, MSAL, Microsoft Graph, OAuth2, JWT',
+    value: 'Supabase Auth, Azure, MSAL, Microsoft Graph, OAuth2, JWT, role-based access patterns',
   },
 ];
 
 const commandSections = [
   { id: 'impact', command: 'cat /impact/highlights.log', title: 'Selected Impact' },
   { id: 'experience', command: 'ls /career/timeline', title: 'Professional Experience' },
-  { id: 'projects', command: 'open /projects/personal', title: 'Personal Projects' },
+  { id: 'projects', command: 'open /projects/product-portfolio', title: 'Product Portfolio' },
   { id: 'skills', command: 'printenv TECH_STACK', title: 'Technical Skills' },
   { id: 'education', command: 'cat /credentials.txt', title: 'Education + Certification' },
 ];
@@ -168,10 +203,10 @@ function App() {
             <img className="hero-logo" src="/MB-Logo/MB-Logo-NoText-Dark.png" alt="Michael Baldwin logo" />
             <p className="hero-label">$ whoami</p>
             <h1>Michael Baldwin</h1>
-            <p className="hero-subtitle">Full-Stack Software Engineer</p>
+            <p className="hero-subtitle">Senior Full-Stack / Product Engineer</p>
             <p className="hero-description">
-              Building enterprise-grade automation and product software that turns complex workflow problems into
-              reliable systems.
+              Building enterprise workflow platforms and shipped product software across React, TypeScript, Node.js,
+              Supabase/Postgres, mobile, and AI-enabled workflows.
             </p>
 
             <div className="typed-terminal" aria-live="polite">
@@ -200,7 +235,12 @@ function App() {
               <a href="#projects" className="terminal-btn primary">
                 ./view-projects
               </a>
-              <a href="/Baldwin_Michael_Resume_20FEB2026.pdf" target="_blank" rel="noreferrer" className="terminal-btn">
+              <a
+                href="/Michael_Baldwin_Senior_Full_Stack_Product_Engineer_Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="terminal-btn"
+              >
                 ./download-resume
               </a>
               <a href="mailto:michaeldonaldbaldwin@gmail.com" className="terminal-btn">
@@ -213,6 +253,14 @@ function App() {
                 <a href="https://www.linkedin.com/in/michael-baldwin-161324174/" target="_blank" rel="noreferrer">
                   linkedin.com/in/michael-baldwin-161324174
                 </a>
+              </li>
+              <li>
+                <a href="https://github.com/mdbaldwin1" target="_blank" rel="noreferrer">
+                  github.com/mdbaldwin1
+                </a>
+              </li>
+              <li>
+                <a href="mailto:michaeldonaldbaldwin@gmail.com">michaeldonaldbaldwin@gmail.com</a>
               </li>
               <li>
                 <a href="tel:+19133535414">+1 (913) 353-5414</a>
@@ -266,15 +314,65 @@ function App() {
 
           <section className="terminal-panel" id="projects">
             <div className="panel-command">$ open /projects/personal</div>
-            <h2>Personal Projects</h2>
+            <h2>Product Portfolio</h2>
             <div className="project-grid">
               {projects.map((project) => (
                 <article key={project.name} className="project-card">
+                  {project.images ? (
+                    <a
+                      className="project-media-link project-media-link-gallery"
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`Open ${project.name}`}
+                    >
+                      <div className="project-gallery" aria-label={`${project.name} screenshots`}>
+                        {project.images.map((image) => (
+                          <img
+                            key={image.src}
+                            className="project-gallery-image"
+                            src={image.src}
+                            alt={image.alt}
+                            loading="lazy"
+                          />
+                        ))}
+                      </div>
+                      <span className="project-media-overlay">open {project.name.toLowerCase()} ↗</span>
+                    </a>
+                  ) : project.image ? (
+                    <a
+                      className="project-media-link"
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`Open ${project.name}`}
+                    >
+                      <img className="project-image" src={project.image} alt={project.imageAlt} loading="lazy" />
+                      <span className="project-media-overlay">open {project.name.toLowerCase()} ↗</span>
+                    </a>
+                  ) : project.previewUrl ? (
+                    <a
+                      className="project-media-link"
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`Open ${project.name}`}
+                    >
+                      <iframe
+                        className="project-preview-frame"
+                        src={project.previewUrl}
+                        title={project.previewTitle}
+                        loading="lazy"
+                        tabIndex="-1"
+                      />
+                      <span className="project-media-overlay">open {project.name.toLowerCase()} ↗</span>
+                    </a>
+                  ) : null}
                   <p className="project-tag">[{project.tag}]</p>
                   <h3>{project.name}</h3>
                   <p>{project.description}</p>
+                  <p className="project-proof">{project.proof}</p>
                   <p className="project-stack">{project.stack}</p>
-                  <p className="project-repo">repo: {project.repo}</p>
                   {project.url ? (
                     <a href={project.url} target="_blank" rel="noreferrer">
                       launch {project.name.toLowerCase()} ↗
@@ -312,7 +410,7 @@ function App() {
 
         <footer className="terminal-footer">
           <p>
-            $ echo Open to senior software engineering roles and product-focused teams
+            $ echo Open to senior full-stack, product engineering, and platform roles
             <span className="cursor" aria-hidden="true" />
           </p>
           <div className="footer-links">
